@@ -1,4 +1,12 @@
 ## Whats in this repo
+### Set up
+Use Gemfile to install dependencies and run using the final line.
+```
+gem install bundler
+bundle install
+bundle exec ruby scraper.rb
+```
+
 ### Ruby Scraper
 For this challenge, I was asked to create a Web Scraper in Ruby to harvest information about Vercel's repositories. I needed to get info about each repository, all pull requests, and their reviews.
 I utilized 2 main Ruby libraries: HTTParty and Nokogiri. HTTParty is let me send GET requests for any information I needed and Nokogiri is a very useful HTTP parser. I used HTTParty to get the raw HTML for all 172 repositories, and Nokogiri to parse the HTML for the information I needed like the repository name, link, visibility, and whether it was archived or not.
